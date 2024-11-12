@@ -138,7 +138,7 @@ Batch Command Options
 
 	•	command: Specifies the batch operation to perform. Options are:
 	    •	add
-	•   	update
+	    •   update
 	    •	delete
 	•	zone: Only required for Bind configurations to specify the zone.
 	•	proxied: Only used for Cloudflare to enable or disable proxying.
