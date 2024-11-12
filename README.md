@@ -127,7 +127,9 @@ To enable batch mode, add the following section to your configuration file:
     provider: cloudflare
     zone: example.com
     ip: 123.123.123.123
+    oldip: 122.122.122.122
     proxied: true
+    rtype: A
     domains: 
         - api.example.com
         - user.example.com
