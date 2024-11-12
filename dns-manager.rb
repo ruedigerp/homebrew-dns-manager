@@ -1,8 +1,8 @@
-class Dns-manager < Formula
+class Dnsmanager < Formula
   desc "dns-manager!"
   homepage "https://www.kuepper.nrw"
   
-  version "1.0.6"
+  version "1.0.7"
   license "MIT"
 
   test do
@@ -10,30 +10,30 @@ class Dns-manager < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.6/dns-manager-v1.0.6-darwin-arm64.tar.gz"
-      sha256 "ab0befdace2b23998de3193ec826335d01025a58533473a1dd087e34d3bfbb38"
+      url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.7/dns-manager-v1.0.7-darwin-arm64.tar.gz"
+      sha256 "456cf576e5797b8c48ec064cebb855a37fd1aa9027612d74e5f49c960ec12bf6"
     elsif Hardware::CPU.intel?
-      url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.6/dns-manager-v1.0.6-darwin-amd64.tar.gz"
-      sha256 "5a6ba14f0dd4f7861eb7eeefe256da235b728abc945d615beb0b58c12573bb4e"
+      url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.7/dns-manager-v1.0.7-darwin-amd64.tar.gz"
+      sha256 "c7fddd95f5516cf954a4f5e86ae05608281c823aa134a862f8fef474b46a34da"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.6/dns-manager-v1.0.6-linux-amd64.tar.gz"
-        sha256 "2566381e55ba347ffbb00e0836d283ff02404331bf3131ac24070d126a84fa1a"
+        url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.7/dns-manager-v1.0.7-linux-amd64.tar.gz"
+        sha256 "b157782dd43c69322161bee3e453bd2f4d4e67102beb778207ec26205e139826"
       else
-        url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.6/dns-manager-v1.0.6-linux-386.tar.gz"
-        sha256 "973edc6cd9e6a861ee7bb2e01bcf4e2a828d9b618e899d44a781fdb893c32ee9"
+        url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.7/dns-manager-v1.0.7-linux-386.tar.gz"
+        sha256 "7aa220d5cac4bc189debc9541bb5f2e70d586bdd51fe7860162434cb8b99445b"
       end
     elsif Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.6/dns-manager-v1.0.6-linux-arm64.tar.gz"
-        sha256 "71c818b013f0b0310b322d74997af2022d925668ca5be601845504713dfd616a"
+        url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.7/dns-manager-v1.0.7-linux-arm64.tar.gz"
+        sha256 "cf75da6a4e8efd82633a3dc60bf59b595bd2240dc463b3f289c2e4ce113d4147"
       else
-        url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.6/dns-manager-v1.0.6-linux-arm.tar.gz"
-        sha256 "5c21558d4b81b1f36a4fc2cab34eb6abafe2c96cb275d21849fd07267d5e1079"
+        url "https://github.com/ruedigerp/cloudflare-dns-manager-homebrew/releases/download/v1.0.7/dns-manager-v1.0.7-linux-arm.tar.gz"
+        sha256 "d3a0f90644dc55d9445f9e91ff5e802b286ae7c622c59fdd349c0bd3ee777290"
       end
     end
   end
@@ -42,27 +42,27 @@ class Dns-manager < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       # Installation steps for macOS ARM64
-      bin.install "dns-manager-v1.0.6-darwin-arm64" => "dns-manager"
+      bin.install "dns-manager-v1.0.7-darwin-arm64" => "dns-manager"
     elsif Hardware::CPU.intel?
       # Installation steps for macOS AMD64
-      bin.install "dns-manager-v1.0.6-darwin-amd64" => "dns-manager"
+      bin.install "dns-manager-v1.0.7-darwin-amd64" => "dns-manager"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         # Installation steps for Linux AMD64
-        bin.install "dns-manager-v1.0.6-linux-amd64" => "dns-manager"
+        bin.install "dns-manager-v1.0.7-linux-amd64" => "dns-manager"
       else
         # Installation steps for Linux 386
-        bin.install "dns-manager-v1.0.6-linux-386" => "dns-manager"
+        bin.install "dns-manager-v1.0.7-linux-386" => "dns-manager"
       end
     elsif Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         # Installation steps for Linux ARM64
-        bin.install "dns-manager-v1.0.6-linux-arm64" => "dns-manager"
+        bin.install "dns-manager-v1.0.7-linux-arm64" => "dns-manager"
       else
         # Installation steps for Linux ARM
-        bin.install "dns-manager-v1.0.6-linux-arm" => "dns-manager"
+        bin.install "dns-manager-v1.0.7-linux-arm" => "dns-manager"
       end
     end
   end
