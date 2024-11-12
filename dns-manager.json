@@ -1,14 +1,14 @@
 {
-    "version": "1.0.12",
+    "version": "1.0.13",
     "license": "UNKNOWN",
     "homepage": "https://kuepper.nrw",
     "bin": "dns-manager",
-    "pre_install": "Rename-Item \"$dir\\dns-manager-v1.0.12-windows-amd64\" dns-manager",
+    "pre_install": "Rename-Item \"$dir\\dns-manager-v1.0.13-windows-amd64\" dns-manager",
     "description": "Dnsmanager!",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ruedigerp/cloudflare-dns-manager/releases/download/v1.0.12/dns-manager-v1.0.12-windows-amd64",
-            "hash": "722fb7acdac8a70b0d19da365337e89aac455e74a7cc02448b7ab8ffc4ffc9c2"
+            "url": "https://github.com/ruedigerp/cloudflare-dns-manager/releases/download/v1.0.13/dns-manager-v1.0.13-windows-amd64",
+            "hash": "75cc04bbe72545948f7373bd837ac41daa7d573d5f05fbade97b4d922e9e2cb4"
         }
     }
 }
